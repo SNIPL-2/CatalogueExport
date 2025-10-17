@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-bottom: 100px;
+  background-color: #f0f0f5;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; 
+  background-color: #004080;
+  color: white;
+  padding: 15px 20px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  max-height: 80px; /* Adjust based on your design */
+}
+
+.company-center {
+  text-align: center;
+}
+
+.company-center h1 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  gap: 12px; 
+}
+
+.company-center p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  gap: 100px; 
+}
+
+.company-center a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+}
+
+
+.company-info h1 {
+  font-size: 22px;
+  margin: 0;
+  color: white;
+}
+
+.company-info p {
+  margin: 4px 0 0;
+  font-size: 16px;
+  gap: 100px; 
+}
+
+.company-info a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+
+
+main {
+  padding: 1rem;
+}
+
+#categorySelect {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.item-header {
+  margin-bottom: 12px;
+}
+
+.item-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.item-name {
+  font-size: 24px;       /* Bigger font size for item name */
+  font-weight: 600;
+  color: #222;
+}
+
+.item-block {
+  background: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.item-image {
+  max-width: 350px;  /* increase from 150px to 250px */
+  height: auto;      /* maintain aspect ratio */
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+}
